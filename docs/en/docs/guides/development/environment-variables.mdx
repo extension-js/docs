@@ -24,10 +24,6 @@ The following file names are supported:
 
 1. Create a new file using one of the supported file names at the same folder level as your `manifest.json` file.
 2. In your extension code, add the Node.js pattern of `process.env.YOUR_VARIABLE_NAME`.
-
-> [!important]
-> Environment variables must start with `EXTENSION_PUBLIC_` to be accessible in your extension code. Variables without this prefix will not be available at runtime.
-
 3. Make sure to prefix all your environment variables with `EXTENSION_PUBLIC_`.
 
 > TIP: Environment variables are not supported in the `manifest.json` file.
