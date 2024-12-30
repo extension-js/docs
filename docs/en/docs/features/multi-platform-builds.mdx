@@ -57,6 +57,19 @@ all necessary assets and manifest files for the specified browser:
 The zip file will be named according to the extension's `name` and `version` in `manifest.json`
 (e.g., `my-extension-1.0.0.zip` for Chrome).
 
+## Generating a Zip File From Source
+
+Sometimes you need to generate a zip file from source, like when submitting your extension to Mozilla Add-Ons store. 
+For that case, you can run `--zip-source`.
+
+<PackageManagerTabs
+  command={{
+    npm: "npx extension build --zip-source",
+    pnpm: "pnpx extension build --zip-source",
+    yarn: "yarn dlx extension build --zip-source",
+  }}
+/>
+
 ## Polyfill Support
 
 Ensure compatibility with older browsers by adding the `--polyfill` flag.
